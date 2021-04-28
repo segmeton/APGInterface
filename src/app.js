@@ -57,6 +57,7 @@
     }
 	function sentMessageBotP2(){
 		var name = document.getElementById('input-text-twitch').value;
+
 		if(name === "")
         {
 			alert("Please type your Twitch name");
@@ -65,6 +66,8 @@
 		else{
 			client.say(`#ligoligo12`, `@${name}, p2-: Loser`);
 		}
+
+
     }
 //}
 
