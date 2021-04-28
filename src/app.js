@@ -11,7 +11,7 @@
 			secure: true
 		},
 		identity: {
-			username: 'sssss',
+			username: 'ligoligo12',
 			password: 'oauth:2adeuj6p5ui8ujtxmqwkf55sk5janf'
 		},
 		channels: [ 'ligoligo12' ]
@@ -37,6 +37,8 @@
 		}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
+
+			//console.log(channel, tags, message, self);
 			
 			
 		//}
@@ -54,7 +56,8 @@
         
     }
     function sentMessageBotP2(){
-        client.say(`#ligoligo12`, `p2-: Loser`);
+		var name = document.getElementById('input-text-twitch').value;
+        client.say(`#ligoligo12`, `@${name}, p2-: Loser`);
     }
 //}
 
